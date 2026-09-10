@@ -3,18 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Job Supply | Private Job Assistance</title>
+
+<title>Job Supply | Deepak Gupta</title>
 
 <meta name="description" content="Job Supply - Factory, Warehouse, Security, Office, Delivery aur Helper jobs ke liye private job assistance.">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
 body{
   font-family:Arial,sans-serif;
   background:#f5f7fb;
   color:#222;
-  line-height:1.6
+  line-height:1.6;
 }
 
 header{
@@ -24,7 +29,7 @@ header{
   position:sticky;
   top:0;
   z-index:1000;
-  box-shadow:0 3px 12px rgba(0,0,0,.15)
+  box-shadow:0 3px 12px rgba(0,0,0,.15);
 }
 
 .nav{
@@ -33,65 +38,94 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:15px
+  gap:15px;
 }
 
-.logo{font-size:24px;font-weight:bold}
-.logo span{color:#facc15}
+.logo{
+  font-size:25px;
+  font-weight:bold;
+}
+
+.logo span{
+  color:#facc15;
+}
 
 nav a{
   color:white;
   text-decoration:none;
   margin-left:15px;
   font-weight:bold;
-  font-size:14px
+  font-size:14px;
 }
 
-nav a:hover{color:#facc15}
+nav a:hover{
+  color:#facc15;
+}
 
+/* HERO */
 .hero{
   background:linear-gradient(135deg,#1d4ed8,#111827);
   color:white;
-  padding:65px 20px;
-  text-align:center
+  padding:65px 20px 75px;
+  text-align:center;
 }
 
 /* PROFILE PHOTO */
 .profile-photo{
-  width:145px;
-  height:145px;
+  width:150px;
+  height:150px;
   object-fit:cover;
   border-radius:50%;
   border:5px solid white;
   display:block;
-  margin:0 auto 20px;
-  box-shadow:0 5px 20px rgba(0,0,0,.3)
+  margin:0 auto 14px;
+  box-shadow:0 8px 30px rgba(0,0,0,.35);
+}
+
+/* DEEPAK GUPTA NAME */
+.profile-name{
+  font-size:28px;
+  font-weight:800;
+  letter-spacing:.5px;
+  margin-bottom:5px;
+  text-shadow:0 3px 10px rgba(0,0,0,.35);
+}
+
+.profile-role{
+  font-size:14px;
+  color:#dbeafe;
+  margin-bottom:20px;
+  letter-spacing:1px;
 }
 
 .badge{
   display:inline-block;
   background:rgba(255,255,255,.15);
   border:1px solid rgba(255,255,255,.3);
-  padding:8px 16px;
+  padding:8px 18px;
   border-radius:30px;
   margin-bottom:20px;
-  font-weight:bold
+  font-weight:bold;
 }
 
 .hero h1{
   font-size:42px;
-  margin-bottom:15px
+  margin-bottom:15px;
 }
 
-.hero h1 span{color:#facc15}
+.hero h1 span{
+  color:#facc15;
+}
 
 .hero p{
   max-width:700px;
   margin:auto;
-  font-size:18px
+  font-size:18px;
 }
 
-.hero-buttons{margin-top:28px}
+.hero-buttons{
+  margin-top:28px;
+}
 
 .btn{
   display:inline-block;
@@ -101,40 +135,54 @@ nav a:hover{color:#facc15}
   font-weight:bold;
   margin:5px;
   border:none;
-  cursor:pointer
+  cursor:pointer;
 }
 
-.btn-primary{background:#facc15;color:#111827}
-.btn-primary:hover{background:#fde047}
+.btn-primary{
+  background:#facc15;
+  color:#111827;
+}
 
-.btn-green{background:#16a34a;color:white}
-.btn-green:hover{background:#15803d}
+.btn-primary:hover{
+  background:#fde047;
+}
 
+.btn-green{
+  background:#16a34a;
+  color:white;
+}
+
+.btn-green:hover{
+  background:#15803d;
+}
+
+/* SECTIONS */
 .section{
   max-width:1100px;
   margin:auto;
-  padding:60px 20px
+  padding:60px 20px;
 }
 
 .section-title{
   text-align:center;
-  margin-bottom:35px
+  margin-bottom:35px;
 }
 
 .section-title h2{
   font-size:32px;
-  color:#111827
+  color:#111827;
 }
 
 .section-title p{
   color:#666;
-  margin-top:8px
+  margin-top:8px;
 }
 
+/* JOB CARDS */
 .cards{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:20px
+  gap:20px;
 }
 
 .card{
@@ -142,18 +190,33 @@ nav a:hover{color:#facc15}
   padding:25px;
   border-radius:14px;
   box-shadow:0 5px 20px rgba(0,0,0,.08);
-  transition:.3s
+  transition:.3s;
 }
 
-.card:hover{transform:translateY(-5px)}
-.card .icon{font-size:38px;margin-bottom:12px}
-.card h3{margin-bottom:8px;color:#111827}
-.card p{color:#666;font-size:15px}
+.card:hover{
+  transform:translateY(-5px);
+}
 
+.card .icon{
+  font-size:38px;
+  margin-bottom:12px;
+}
+
+.card h3{
+  margin-bottom:8px;
+  color:#111827;
+}
+
+.card p{
+  color:#666;
+  font-size:15px;
+}
+
+/* BENEFITS */
 .benefits{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:15px
+  gap:15px;
 }
 
 .benefit{
@@ -162,13 +225,14 @@ nav a:hover{color:#facc15}
   border-radius:12px;
   text-align:center;
   box-shadow:0 4px 15px rgba(0,0,0,.06);
-  font-weight:bold
+  font-weight:bold;
 }
 
+/* STEPS */
 .steps{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:20px
+  gap:20px;
 }
 
 .step{
@@ -176,7 +240,7 @@ nav a:hover{color:#facc15}
   padding:25px;
   border-radius:12px;
   text-align:center;
-  box-shadow:0 4px 15px rgba(0,0,0,.07)
+  box-shadow:0 4px 15px rgba(0,0,0,.07);
 }
 
 .step-number{
@@ -188,33 +252,34 @@ nav a:hover{color:#facc15}
   color:white;
   font-weight:bold;
   margin:0 auto 15px;
-  font-size:20px
+  font-size:20px;
 }
 
+/* RESUME */
 .resume-box{
   background:linear-gradient(135deg,#eff6ff,#fff);
   padding:35px;
   border-radius:16px;
   box-shadow:0 5px 20px rgba(0,0,0,.08);
   max-width:750px;
-  margin:auto
+  margin:auto;
 }
 
 .resume-box h3{
   text-align:center;
   margin-bottom:10px;
-  font-size:25px
+  font-size:25px;
 }
 
 .resume-box>p{
   text-align:center;
   color:#666;
-  margin-bottom:25px
+  margin-bottom:25px;
 }
 
 .upload-form{
   display:grid;
-  gap:15px
+  gap:15px;
 }
 
 .upload-form input{
@@ -223,12 +288,12 @@ nav a:hover{color:#facc15}
   border:1px solid #d1d5db;
   border-radius:8px;
   font-size:15px;
-  background:white
+  background:white;
 }
 
 .upload-form input:focus{
   outline:none;
-  border-color:#2563eb
+  border-color:#2563eb;
 }
 
 .file-label{
@@ -240,12 +305,16 @@ nav a:hover{color:#facc15}
   border-radius:10px;
   cursor:pointer;
   color:#2563eb;
-  font-weight:bold
+  font-weight:bold;
 }
 
-.file-label:hover{background:#eff6ff}
+.file-label:hover{
+  background:#eff6ff;
+}
 
-.upload-input{display:none}
+.upload-input{
+  display:none;
+}
 
 .upload-btn{
   background:#2563eb;
@@ -255,76 +324,133 @@ nav a:hover{color:#facc15}
   border-radius:8px;
   font-size:16px;
   font-weight:bold;
-  cursor:pointer
+  cursor:pointer;
 }
 
-.upload-btn:hover{background:#1d4ed8}
+.upload-btn:hover{
+  background:#1d4ed8;
+}
 
 .upload-btn:disabled{
   background:#9ca3af;
-  cursor:not-allowed
+  cursor:not-allowed;
 }
 
 #uploadMessage{
   text-align:center;
   font-weight:bold;
-  margin-top:5px
+  margin-top:5px;
 }
 
+/* CONTACT */
 .contact{
   background:#111827;
   color:white;
   border-radius:18px;
   padding:40px 20px;
-  text-align:center
+  text-align:center;
 }
 
 .contact h2{
   font-size:30px;
-  margin-bottom:15px
+  margin-bottom:15px;
 }
 
-.contact p{margin:8px 0}
+.contact p{
+  margin:8px 0;
+}
 
 .contact a{
   color:#facc15;
   text-decoration:none;
-  font-weight:bold
+  font-weight:bold;
 }
 
+/* FOOTER */
 footer{
   background:#020617;
   color:#cbd5e1;
   text-align:center;
   padding:22px 15px;
-  font-size:14px
+  font-size:14px;
 }
 
+/* MOBILE */
 @media(max-width:850px){
-  .cards{grid-template-columns:repeat(2,1fr)}
-  .benefits{grid-template-columns:repeat(2,1fr)}
-  .steps{grid-template-columns:1fr}
-  .hero h1{font-size:34px}
+
+  .cards{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .benefits{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .steps{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
 }
 
 @media(max-width:600px){
-  .nav{flex-direction:column}
-  nav a{margin:0 6px;font-size:13px}
-  .cards{grid-template-columns:1fr}
-  .benefits{grid-template-columns:1fr 1fr}
-  .hero{padding:50px 15px}
-  .hero h1{font-size:30px}
-  .section{padding:45px 15px}
-  .resume-box{padding:25px 18px}
+
+  .nav{
+    flex-direction:column;
+  }
+
+  nav a{
+    margin:0 6px;
+    font-size:13px;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .benefits{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .hero{
+    padding:50px 15px;
+  }
+
+  .hero h1{
+    font-size:30px;
+  }
+
+  .profile-photo{
+    width:130px;
+    height:130px;
+  }
+
+  .profile-name{
+    font-size:24px;
+  }
+
+  .section{
+    padding:45px 15px;
+  }
+
+  .resume-box{
+    padding:25px 18px;
+  }
 }
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
 <div class="nav">
-<div class="logo">Job <span>Supply</span></div>
+
+<div class="logo">
+Job <span>Supply</span>
+</div>
 
 <nav>
 <a href="#jobs">Jobs</a>
@@ -332,15 +458,31 @@ footer{
 <a href="#resume">Resume</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </div>
 </header>
 
+
+<!-- HERO -->
 <section class="hero">
 
-<!-- YOUR PHOTO -->
-<img src="profile.jpg" alt="Job Supply" class="profile-photo">
+<img
+src="profile.jpg"
+alt="Deepak Gupta"
+class="profile-photo"
+>
 
-<div class="badge">💼 Job Supply</div>
+<div class="profile-name">
+Deepak Gupta
+</div>
+
+<div class="profile-role">
+PRIVATE JOB ASSISTANCE
+</div>
+
+<div class="badge">
+💼 Job Supply
+</div>
 
 <h1>
 Private Job की तलाश?
@@ -353,22 +495,37 @@ Factory, Company, Warehouse, Security, Office, Delivery
 </p>
 
 <div class="hero-buttons">
-<a href="#jobs" class="btn btn-primary">🔎 Jobs देखें</a>
 
-<a href="https://wa.me/919693428916"
+<a href="#jobs" class="btn btn-primary">
+🔎 Jobs देखें
+</a>
+
+<a
+href="https://wa.me/919693428916"
 class="btn btn-green"
-target="_blank">
+target="_blank"
+>
 💬 WhatsApp करें
 </a>
+
 </div>
 
 </section>
 
+
+<!-- JOB CATEGORIES -->
 <section class="section" id="jobs">
 
 <div class="section-title">
-<h2>Available Job Categories</h2>
-<p>अपनी पसंद की job category चुनें</p>
+
+<h2>
+Available Job Categories
+</h2>
+
+<p>
+अपनी पसंद की job category चुनें
+</p>
+
 </div>
 
 <div class="cards">
@@ -436,11 +593,18 @@ target="_blank">
 </div>
 </section>
 
+
+<!-- BENEFITS -->
 <section class="section" id="benefits">
 
 <div class="section-title">
+
 <h2>Job Benefits</h2>
-<p>Available jobs में मिलने वाली सुविधाएं</p>
+
+<p>
+Available jobs में मिलने वाली सुविधाएं
+</p>
+
 </div>
 
 <div class="benefits">
@@ -459,11 +623,20 @@ target="_blank">
 </div>
 </section>
 
+
+<!-- HOW IT WORKS -->
 <section class="section">
 
 <div class="section-title">
-<h2>कैसे काम करता है?</h2>
-<p>Job पाने के लिए आसान process</p>
+
+<h2>
+कैसे काम करता है?
+</h2>
+
+<p>
+Job पाने के लिए आसान process
+</p>
+
 </div>
 
 <div class="steps">
@@ -471,34 +644,51 @@ target="_blank">
 <div class="step">
 <div class="step-number">1</div>
 <h3>Job चुनें</h3>
-<p>अपनी पसंद की job category देखें।</p>
+<p>
+अपनी पसंद की job category देखें।
+</p>
 </div>
 
 <div class="step">
 <div class="step-number">2</div>
 <h3>Resume Upload करें</h3>
-<p>अपना resume upload करें। Resume Google Drive में भेजा जाएगा।</p>
+<p>
+अपना resume upload करें। Resume Google Drive में भेजा जाएगा।
+</p>
 </div>
 
 <div class="step">
 <div class="step-number">3</div>
 <h3>Contact करें</h3>
-<p>Job की जानकारी के लिए WhatsApp या phone पर contact करें।</p>
+<p>
+Job की जानकारी के लिए WhatsApp या phone पर contact करें।
+</p>
 </div>
 
 </div>
 </section>
 
+
+<!-- RESUME UPLOAD -->
 <section class="section" id="resume">
 
 <div class="section-title">
-<h2>📄 Resume Upload</h2>
-<p>अपना resume upload करें और job opportunity के लिए contact करें।</p>
+
+<h2>
+📄 Resume Upload
+</h2>
+
+<p>
+अपना resume upload करें और job opportunity के लिए contact करें।
+</p>
+
 </div>
 
 <div class="resume-box">
 
-<h3>अपना Resume भेजें</h3>
+<h3>
+अपना Resume भेजें
+</h3>
 
 <p>
 PDF, DOC या DOCX file upload कर सकते हैं।
@@ -521,10 +711,19 @@ placeholder="Mobile Number"
 required
 >
 
-<label for="resumeFile" class="file-label">
+<label
+for="resumeFile"
+class="file-label"
+>
+
 📎 Resume File चुनें
+
 <br>
-<small id="fileName">PDF / DOC / DOCX</small>
+
+<small id="fileName">
+PDF / DOC / DOCX
+</small>
+
 </label>
 
 <input
@@ -538,32 +737,45 @@ required
 <button
 type="submit"
 class="upload-btn"
-id="uploadButton">
+id="uploadButton"
+>
 📤 Upload Resume
 </button>
 
 <div id="uploadMessage"></div>
 
 </form>
+
 </div>
 </section>
 
+
+<!-- CONTACT -->
 <section class="section" id="contact">
 
 <div class="contact">
 
-<h2>📞 Contact Job Supply</h2>
+<h2>
+📞 Contact Job Supply
+</h2>
 
-<p>Job के बारे में जानकारी के लिए हमसे संपर्क करें।</p>
+<p>
+Job के बारे में जानकारी के लिए हमसे संपर्क करें।
+</p>
 
 <p>
 📱 Phone:
-<a href="tel:+919693428916">9693428916</a>
+<a href="tel:+919693428916">
+9693428916
+</a>
 </p>
 
 <p>
 💬 WhatsApp:
-<a href="https://wa.me/919693428916" target="_blank">
+<a
+href="https://wa.me/919693428916"
+target="_blank"
+>
 WhatsApp पर बात करें
 </a>
 </p>
@@ -578,118 +790,176 @@ deepakgupta818286@gmail.com
 </div>
 </section>
 
+
+<!-- FOOTER -->
 <footer>
-© <span id="year"></span> Job Supply • Private Job Assistance
+
+© <span id="year"></span>
+Job Supply • Private Job Assistance • Deepak Gupta
+
 </footer>
+
 
 <script>
 
+/* YEAR */
+
 document.getElementById("year").textContent =
 new Date().getFullYear();
+
+
+/* GOOGLE APPS SCRIPT */
 
 const GOOGLE_SCRIPT_URL =
 "https://script.google.com/macros/s/AKfycbyXpZZwOSK1Gy9p6j-VJeUmbFfCT8jxBL14G2_pku1vUWbapB6JjSzdMXJbC7iO5M2-kA/exec";
 
 
-document.getElementById("resumeFile")
+/* FILE NAME */
+
+document
+.getElementById("resumeFile")
 .addEventListener("change",function(){
 
 const file=this.files[0];
 
 if(file){
-document.getElementById("fileName").textContent=
-"Selected: "+file.name;
+
+document.getElementById("fileName").textContent =
+"Selected: " + file.name;
+
 }else{
-document.getElementById("fileName").textContent=
+
+document.getElementById("fileName").textContent =
 "PDF / DOC / DOCX";
+
 }
 
 });
 
 
-document.getElementById("resumeForm")
+/* RESUME UPLOAD */
+
+document
+.getElementById("resumeForm")
 .addEventListener("submit",async function(event){
 
 event.preventDefault();
 
-const name=
+const name =
 document.getElementById("candidateName").value.trim();
 
-const phone=
+const phone =
 document.getElementById("candidatePhone").value.trim();
 
-const file=
+const file =
 document.getElementById("resumeFile").files[0];
 
-const message=
+const message =
 document.getElementById("uploadMessage");
 
-const button=
+const button =
 document.getElementById("uploadButton");
 
 
 if(!name){
-message.textContent="❌ कृपया अपना नाम डालें।";
+
+message.textContent =
+"❌ कृपया अपना नाम डालें।";
+
 message.style.color="red";
+
 return;
+
 }
+
 
 if(!phone){
-message.textContent="❌ कृपया mobile number डालें।";
+
+message.textContent =
+"❌ कृपया mobile number डालें।";
+
 message.style.color="red";
+
 return;
+
 }
+
 
 if(!file){
-message.textContent="❌ कृपया resume file चुनें।";
+
+message.textContent =
+"❌ कृपया resume file चुनें।";
+
 message.style.color="red";
+
 return;
+
 }
 
 
-const maxSize=10*1024*1024;
+/* MAXIMUM 10 MB */
 
-if(file.size>maxSize){
-message.textContent=
+const maxSize =
+10 * 1024 * 1024;
+
+if(file.size > maxSize){
+
+message.textContent =
 "❌ File size 10 MB से ज्यादा नहीं होनी चाहिए।";
+
 message.style.color="red";
+
 return;
+
 }
 
 
-const extension=
+/* FILE TYPE */
+
+const extension =
 file.name.split(".").pop().toLowerCase();
 
-const allowedExtensions=["pdf","doc","docx"];
+const allowedExtensions =
+["pdf","doc","docx"];
 
 if(!allowedExtensions.includes(extension)){
-message.textContent=
+
+message.textContent =
 "❌ केवल PDF, DOC या DOCX file upload करें।";
+
 message.style.color="red";
+
 return;
+
 }
 
 
 button.disabled=true;
-button.textContent="⏳ Uploading...";
 
-message.textContent=
+button.textContent =
+"⏳ Uploading...";
+
+message.textContent =
 "⏳ आपका resume upload हो रहा है...";
 
-message.style.color="#2563eb";
+message.style.color =
+"#2563eb";
 
 
-const reader=new FileReader();
+const reader =
+new FileReader();
 
 
-reader.onload=async function(){
+reader.onload =
+async function(){
 
 try{
 
-const base64Data=
+const base64Data =
 reader.result.split(",")[1];
 
-const data={
+
+const data = {
 
 candidateName:name,
 
@@ -707,26 +977,42 @@ base64Data:base64Data
 
 
 await fetch(
+
 GOOGLE_SCRIPT_URL,
+
 {
+
 method:"POST",
+
 mode:"no-cors",
+
 headers:{
-"Content-Type":"text/plain;charset=utf-8"
+"Content-Type":
+"text/plain;charset=utf-8"
 },
+
 body:JSON.stringify(data)
+
 }
+
 );
 
 
-message.textContent=
+message.textContent =
 "✅ Resume successfully upload ho gaya!";
 
-message.style.color="green";
+message.style.color =
+"green";
 
-document.getElementById("resumeForm").reset();
 
-document.getElementById("fileName").textContent=
+document
+.getElementById("resumeForm")
+.reset();
+
+
+document
+.getElementById("fileName")
+.textContent =
 "PDF / DOC / DOCX";
 
 
@@ -734,28 +1020,36 @@ document.getElementById("fileName").textContent=
 
 console.error(error);
 
-message.textContent=
+message.textContent =
 "❌ Resume upload नहीं हो पाया। कृपया दोबारा try करें।";
 
-message.style.color="red";
+message.style.color =
+"red";
 
 }
 
+
 button.disabled=false;
-button.textContent="📤 Upload Resume";
+
+button.textContent =
+"📤 Upload Resume";
 
 };
 
 
-reader.onerror=function(){
+reader.onerror =
+function(){
 
-message.textContent=
+message.textContent =
 "❌ File read नहीं हो पाई।";
 
-message.style.color="red";
+message.style.color =
+"red";
 
 button.disabled=false;
-button.textContent="📤 Upload Resume";
+
+button.textContent =
+"📤 Upload Resume";
 
 };
 
