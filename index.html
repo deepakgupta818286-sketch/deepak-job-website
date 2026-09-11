@@ -6,1309 +6,919 @@
 
 <title>Job Supply | Deepak Gupta</title>
 
-<meta name="description" content="Job Supply - Private jobs, factory, warehouse, security, office, IT, sales, delivery, driver, technician aur other private jobs ke liye job assistance.">
+<meta name="description" content="Job Supply - Factory, Warehouse, Office, Delivery, Security और अन्य Private Jobs. Resume Upload करें और नौकरी के अवसर पाएं.">
 
 <style>
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:#f5f7fb;
-  color:#222;
-  line-height:1.6;
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.6;
 }
 
 header{
-  background:linear-gradient(135deg,#111827,#2563eb);
-  color:white;
-  padding:18px 20px;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  box-shadow:0 3px 12px rgba(0,0,0,.15);
+    background:linear-gradient(135deg,#0d47a1,#1976d2);
+    color:white;
+    padding:15px 20px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
 }
 
-.nav{
-  max-width:1100px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:15px;
+.navbar{
+    max-width:1150px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
 }
 
 .logo{
-  font-size:25px;
-  font-weight:bold;
+    font-size:25px;
+    font-weight:bold;
 }
 
-.logo span{
-  color:#facc15;
+nav{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
 }
 
 nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:15px;
-  font-weight:bold;
-  font-size:14px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:14px;
 }
 
 nav a:hover{
-  color:#facc15;
+    color:#ffeb3b;
 }
 
-/* HERO */
 .hero{
-  background:linear-gradient(135deg,#1d4ed8,#111827);
-  color:white;
-  padding:65px 20px 75px;
-  text-align:center;
+    background:linear-gradient(135deg,#e3f2fd,#ffffff);
+    text-align:center;
+    padding:55px 20px;
 }
 
 .profile-photo{
-  width:150px;
-  height:150px;
-  object-fit:cover;
-  border-radius:50%;
-  border:5px solid white;
-  display:block;
-  margin:0 auto 14px;
-  box-shadow:0 8px 30px rgba(0,0,0,.35);
-}
-
-.profile-name{
-  font-size:28px;
-  font-weight:800;
-  letter-spacing:.5px;
-  margin-bottom:5px;
-  text-shadow:0 3px 10px rgba(0,0,0,.35);
-}
-
-.profile-role{
-  font-size:14px;
-  color:#dbeafe;
-  margin-bottom:20px;
-  letter-spacing:1px;
-}
-
-.badge{
-  display:inline-block;
-  background:rgba(255,255,255,.15);
-  border:1px solid rgba(255,255,255,.3);
-  padding:8px 18px;
-  border-radius:30px;
-  margin-bottom:20px;
-  font-weight:bold;
+    width:125px;
+    height:125px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
 }
 
 .hero h1{
-  font-size:42px;
-  margin-bottom:15px;
+    margin-top:15px;
+    color:#0d47a1;
+    font-size:35px;
 }
 
-.hero h1 span{
-  color:#facc15;
+.hero h2{
+    margin-top:5px;
+    color:#333;
+    font-size:20px;
 }
 
 .hero p{
-  max-width:750px;
-  margin:auto;
-  font-size:18px;
+    max-width:750px;
+    margin:15px auto;
+    color:#555;
 }
 
-.hero-buttons{
-  margin-top:28px;
+.buttons{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
 }
 
 .btn{
-  display:inline-block;
-  padding:13px 22px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-  margin:5px;
-  border:none;
-  cursor:pointer;
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    color:white;
 }
 
-.btn-primary{
-  background:#facc15;
-  color:#111827;
+.whatsapp{
+    background:#25D366;
 }
 
-.btn-primary:hover{
-  background:#fde047;
+.call{
+    background:#1976d2;
 }
 
-.btn-green{
-  background:#16a34a;
-  color:white;
+.email{
+    background:#6a1b9a;
 }
 
-.btn-green:hover{
-  background:#15803d;
-}
-
-/* SECTIONS */
-.section{
-  max-width:1100px;
-  margin:auto;
-  padding:60px 20px;
+section{
+    max-width:1150px;
+    margin:auto;
+    padding:50px 20px;
 }
 
 .section-title{
-  text-align:center;
-  margin-bottom:35px;
+    text-align:center;
+    margin-bottom:30px;
+    color:#0d47a1;
+    font-size:30px;
 }
 
-.section-title h2{
-  font-size:32px;
-  color:#111827;
+.jobs-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:18px;
 }
 
-.section-title p{
-  color:#666;
-  margin-top:8px;
+.job-card{
+    background:white;
+    padding:22px 15px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:4px solid #1976d2;
 }
 
-/* JOB CARDS */
-.cards{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+.job-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
-.card{
-  background:white;
-  padding:25px;
-  border-radius:14px;
-  box-shadow:0 5px 20px rgba(0,0,0,.08);
-  transition:.3s;
+.job-card .icon{
+    font-size:35px;
+    margin-bottom:10px;
 }
 
-.card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 10px 25px rgba(0,0,0,.12);
+.job-card h3{
+    color:#222;
+    font-size:17px;
 }
 
-.card .icon{
-  font-size:38px;
-  margin-bottom:12px;
-}
-
-.card h3{
-  margin-bottom:8px;
-  color:#111827;
-  font-size:20px;
-}
-
-.card p{
-  color:#666;
-  font-size:15px;
-}
-
-/* BENEFITS */
 .benefits{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
+    background:#fff;
+}
+
+.benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 }
 
 .benefit{
-  background:white;
-  padding:20px;
-  border-radius:12px;
-  text-align:center;
-  box-shadow:0 4px 15px rgba(0,0,0,.06);
-  font-weight:bold;
+    background:#f8fbff;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 3px 12px rgba(0,0,0,.07);
 }
 
-/* STEPS */
+.benefit .icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
 .steps{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 }
 
 .step{
-  background:white;
-  padding:25px;
-  border-radius:12px;
-  text-align:center;
-  box-shadow:0 4px 15px rgba(0,0,0,.07);
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
 .step-number{
-  width:45px;
-  height:45px;
-  line-height:45px;
-  border-radius:50%;
-  background:#2563eb;
-  color:white;
-  font-weight:bold;
-  margin:0 auto 15px;
-  font-size:20px;
+    width:45px;
+    height:45px;
+    line-height:45px;
+    margin:0 auto 12px;
+    border-radius:50%;
+    background:#1976d2;
+    color:white;
+    font-weight:bold;
+    font-size:20px;
 }
 
-/* RESUME */
-.resume-box{
-  background:linear-gradient(135deg,#eff6ff,#fff);
-  padding:35px;
-  border-radius:16px;
-  box-shadow:0 5px 20px rgba(0,0,0,.08);
-  max-width:750px;
-  margin:auto;
+.upload-section{
+    background:linear-gradient(135deg,#e3f2fd,#f8fbff);
 }
 
-.resume-box h3{
-  text-align:center;
-  margin-bottom:10px;
-  font-size:25px;
+.upload-box{
+    max-width:650px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
 }
 
-.resume-box>p{
-  text-align:center;
-  color:#666;
-  margin-bottom:25px;
+.upload-box h3{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:20px;
 }
 
-.upload-form{
-  display:grid;
-  gap:15px;
+.form-group{
+    margin-bottom:17px;
 }
 
-.upload-form input{
-  width:100%;
-  padding:13px;
-  border:1px solid #d1d5db;
-  border-radius:8px;
-  font-size:15px;
-  background:white;
+.form-group label{
+    display:block;
+    margin-bottom:7px;
+    font-weight:bold;
 }
 
-.upload-form input:focus{
-  outline:none;
-  border-color:#2563eb;
-}
-
-.file-label{
-  display:block;
-  background:#f8fafc;
-  border:2px dashed #93c5fd;
-  padding:22px;
-  text-align:center;
-  border-radius:10px;
-  cursor:pointer;
-  color:#2563eb;
-  font-weight:bold;
-}
-
-.file-label:hover{
-  background:#eff6ff;
-}
-
-.upload-input{
-  display:none;
+.form-group input{
+    width:100%;
+    padding:13px;
+    border:1px solid #ccc;
+    border-radius:7px;
+    font-size:15px;
 }
 
 .upload-btn{
-  background:#2563eb;
-  color:white;
-  padding:14px;
-  border:none;
-  border-radius:8px;
-  font-size:16px;
-  font-weight:bold;
-  cursor:pointer;
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#1976d2;
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
 }
 
 .upload-btn:hover{
-  background:#1d4ed8;
+    background:#0d47a1;
 }
 
 .upload-btn:disabled{
-  background:#9ca3af;
-  cursor:not-allowed;
+    background:#999;
+    cursor:not-allowed;
 }
 
 #uploadMessage{
-  text-align:center;
-  font-weight:bold;
-  margin-top:5px;
+    margin-top:15px;
+    text-align:center;
+    font-weight:bold;
 }
 
-/* CONTACT */
 .contact{
-  background:#111827;
-  color:white;
-  border-radius:18px;
-  padding:40px 20px;
-  text-align:center;
+    text-align:center;
+    background:white;
 }
 
-.contact h2{
-  font-size:30px;
-  margin-bottom:15px;
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    background:#f8fbff;
 }
 
-.contact p{
-  margin:8px 0;
+.contact-box p{
+    margin:10px 0;
+    font-size:17px;
 }
 
-.contact a{
-  color:#facc15;
-  text-decoration:none;
-  font-weight:bold;
+.contact-box a{
+    color:#0d47a1;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-/* FOOTER */
 footer{
-  background:#020617;
-  color:#cbd5e1;
-  text-align:center;
-  padding:22px 15px;
-  font-size:14px;
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
 }
 
-/* MOBILE */
-@media(max-width:850px){
-
-  .cards{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .benefits{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .steps{
-    grid-template-columns:1fr;
-  }
-
-  .hero h1{
-    font-size:34px;
-  }
+footer p{
+    margin:5px 0;
 }
 
-@media(max-width:600px){
+@media(max-width:700px){
+    .navbar{
+        flex-direction:column;
+    }
 
-  .nav{
-    flex-direction:column;
-  }
+    nav{
+        justify-content:center;
+    }
 
-  nav a{
-    margin:0 6px;
-    font-size:13px;
-  }
+    .hero h1{
+        font-size:28px;
+    }
 
-  .cards{
-    grid-template-columns:1fr;
-  }
-
-  .benefits{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .hero{
-    padding:50px 15px;
-  }
-
-  .hero h1{
-    font-size:30px;
-  }
-
-  .profile-photo{
-    width:130px;
-    height:130px;
-  }
-
-  .profile-name{
-    font-size:24px;
-  }
-
-  .section{
-    padding:45px 15px;
-  }
-
-  .resume-box{
-    padding:25px 18px;
-  }
+    .section-title{
+        font-size:25px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-<div class="nav">
+    <div class="navbar">
+        <div class="logo">💼 Job Supply</div>
 
-<div class="logo">
-Job <span>Supply</span>
-</div>
-
-<nav>
-<a href="#jobs">Jobs</a>
-<a href="#benefits">Benefits</a>
-<a href="#resume">Resume</a>
-<a href="#contact">Contact</a>
-</nav>
-
-</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#how">How It Works</a>
+            <a href="#upload">Resume Upload</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 </header>
 
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="home">
 
-<img
-src="profile.jpg"
-alt="Deepak Gupta"
-class="profile-photo"
->
+    <img src="profile.jpg" alt="Deepak Gupta" class="profile-photo">
 
-<div class="profile-name">
-Deepak Gupta
-</div>
+    <h1>Deepak Gupta</h1>
 
-<div class="profile-role">
-PRIVATE JOB ASSISTANCE
-</div>
+    <h2>Job Supply</h2>
 
-<div class="badge">
-💼 Job Supply
-</div>
+    <p>
+        Private Jobs की तलाश कर रहे उम्मीदवारों के लिए
+        Factory, Warehouse, Office, Delivery, Security और
+        अन्य क्षेत्रों में Job Opportunities.
+    </p>
 
-<h1>
-Private Job की तलाश?
-<span>सही शुरुआत यहीं से करें।</span>
-</h1>
+    <div class="buttons">
 
-<p>
-Factory, Company, Warehouse, Security, Office, IT,
-Sales, Delivery, Driver, Technician, Hotel, Education
-और अन्य Private Jobs के लिए Job Supply से जुड़ें।
-</p>
+        <a class="btn whatsapp"
+           href="https://wa.me/919693428916"
+           target="_blank">
+           💬 WhatsApp
+        </a>
 
-<div class="hero-buttons">
+        <a class="btn call"
+           href="tel:9693428916">
+           📞 Call Now
+        </a>
 
-<a href="#jobs" class="btn btn-primary">
-🔎 Jobs देखें
-</a>
+        <a class="btn email"
+           href="mailto:deepakgupta818286@gmail.com">
+           ✉️ Email
+        </a>
 
-<a
-href="https://wa.me/919693428916"
-class="btn btn-green"
-target="_blank"
->
-💬 WhatsApp करें
-</a>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- JOB CATEGORIES -->
-<section class="section" id="jobs">
+<!-- JOBS -->
+<section id="jobs">
 
-<div class="section-title">
+    <h2 class="section-title">Available Job Categories</h2>
 
-<h2>
-Available Private Job Categories
-</h2>
+    <div class="jobs-grid">
 
-<p>
-अपनी योग्यता और पसंद के अनुसार Private Job Category चुनें
-</p>
+        <div class="job-card"><div class="icon">🏭</div><h3>Factory Worker</h3></div>
 
-</div>
+        <div class="job-card"><div class="icon">📦</div><h3>Warehouse Worker</h3></div>
 
-<div class="cards">
+        <div class="job-card"><div class="icon">🚚</div><h3>Delivery Boy</h3></div>
 
-<!-- 1 -->
-<div class="card">
-<div class="icon">🏭</div>
-<h3>Factory & Manufacturing Jobs</h3>
-<p>
-Production, machine operator, assembly, quality और manufacturing से जुड़ी jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🛡️</div><h3>Security Guard</h3></div>
 
-<!-- 2 -->
-<div class="card">
-<div class="icon">📦</div>
-<h3>Warehouse & Logistics Jobs</h3>
-<p>
-Warehouse, packing, loading, unloading, sorting और logistics jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">💻</div><h3>Computer Operator</h3></div>
 
-<!-- 3 -->
-<div class="card">
-<div class="icon">🛡️</div>
-<h3>Security Jobs</h3>
-<p>
-Security guard, supervisor और private security से जुड़ी opportunities.
-</p>
-</div>
+        <div class="job-card"><div class="icon">📞</div><h3>Telecaller</h3></div>
 
-<!-- 4 -->
-<div class="card">
-<div class="icon">💻</div>
-<h3>IT & Computer Jobs</h3>
-<p>
-Computer operator, IT support, technical support और computer related jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🏢</div><h3>Office Staff</h3></div>
 
-<!-- 5 -->
-<div class="card">
-<div class="icon">🏢</div>
-<h3>Office & Back Office Jobs</h3>
-<p>
-Office assistant, back office, receptionist और administrative jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🧾</div><h3>Data Entry Operator</h3></div>
 
-<!-- 6 -->
-<div class="card">
-<div class="icon">⌨️</div>
-<h3>Data Entry Jobs</h3>
-<p>
-Data entry, documentation, computer typing और online data work.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🛒</div><h3>Sales Executive</h3></div>
 
-<!-- 7 -->
-<div class="card">
-<div class="icon">📞</div>
-<h3>BPO & Customer Care Jobs</h3>
-<p>
-Customer support, call center, BPO और customer service jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">👨‍💼</div><h3>Field Executive</h3></div>
 
-<!-- 8 -->
-<div class="card">
-<div class="icon">📈</div>
-<h3>Sales & Marketing Jobs</h3>
-<p>
-Sales executive, field sales, marketing और business development jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🏪</div><h3>Store Executive</h3></div>
 
-<!-- 9 -->
-<div class="card">
-<div class="icon">🛒</div>
-<h3>Retail & Store Jobs</h3>
-<p>
-Store executive, salesman, cashier और retail sector की jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">📋</div><h3>Back Office</h3></div>
 
-<!-- 10 -->
-<div class="card">
-<div class="icon">🛵</div>
-<h3>Delivery & Courier Jobs</h3>
-<p>
-Delivery executive, courier, parcel delivery और field delivery jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🧑‍💼</div><h3>HR Executive</h3></div>
 
-<!-- 11 -->
-<div class="card">
-<div class="icon">🚗</div>
-<h3>Driver Jobs</h3>
-<p>
-Car driver, company driver, commercial और delivery driver jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">💰</div><h3>Accountant</h3></div>
 
-<!-- 12 -->
-<div class="card">
-<div class="icon">🔧</div>
-<h3>Technician & Maintenance Jobs</h3>
-<p>
-Technician, maintenance, machine repair और technical jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">📊</div><h3>MIS Executive</h3></div>
 
-<!-- 13 -->
-<div class="card">
-<div class="icon">⚡</div>
-<h3>Electrician Jobs</h3>
-<p>
-Electrician, electrical maintenance और wiring से जुड़ी private jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🏦</div><h3>Banking Jobs</h3></div>
 
-<!-- 14 -->
-<div class="card">
-<div class="icon">🚿</div>
-<h3>Plumber Jobs</h3>
-<p>
-Plumbing, maintenance और building service से जुड़ी jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">💳</div><h3>Finance Executive</h3></div>
 
-<!-- 15 -->
-<div class="card">
-<div class="icon">❄️</div>
-<h3>AC & Refrigeration Jobs</h3>
-<p>
-AC technician, refrigerator technician और cooling service jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">📱</div><h3>Mobile Sales</h3></div>
 
-<!-- 16 -->
-<div class="card">
-<div class="icon">🏗️</div>
-<h3>Construction Jobs</h3>
-<p>
-Construction, site worker, supervisor और building work opportunities.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🛍️</div><h3>Retail Staff</h3></div>
 
-<!-- 17 -->
-<div class="card">
-<div class="icon">👷</div>
-<h3>Helper & Labour Jobs</h3>
-<p>
-Helper, worker, loading और अन्य skilled तथा unskilled jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🍔</div><h3>Hotel Staff</h3></div>
 
-<!-- 18 -->
-<div class="card">
-<div class="icon">🏨</div>
-<h3>Hotel & Hospitality Jobs</h3>
-<p>
-Hotel, resort, housekeeping, front office और hospitality jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🍳</div><h3>Kitchen Helper</h3></div>
 
-<!-- 19 -->
-<div class="card">
-<div class="icon">🍽️</div>
-<h3>Restaurant & Catering Jobs</h3>
-<p>
-Restaurant, catering, waiter, cook और kitchen related jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">👨‍🍳</div><h3>Cook</h3></div>
 
-<!-- 20 -->
-<div class="card">
-<div class="icon">🏫</div>
-<h3>Private School Jobs</h3>
-<p>
-Private school में teaching, office और support staff jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🧹</div><h3>Housekeeping</h3></div>
 
-<!-- 21 -->
-<div class="card">
-<div class="icon">👨‍🏫</div>
-<h3>Teacher & Tutor Jobs</h3>
-<p>
-Private teacher, tutor, coaching और education sector jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🏨</div><h3>Hotel Receptionist</h3></div>
 
-<!-- 22 -->
-<div class="card">
-<div class="icon">🧑‍💼</div>
-<h3>HR & Recruitment Jobs</h3>
-<p>
-HR executive, recruiter, recruitment और employee management jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🚗</div><h3>Driver</h3></div>
 
-<!-- 23 -->
-<div class="card">
-<div class="icon">💰</div>
-<h3>Account & Finance Jobs</h3>
-<p>
-Account assistant, billing, cashier और finance related jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🚛</div><h3>Heavy Driver</h3></div>
 
-<!-- 24 -->
-<div class="card">
-<div class="icon">🏦</div>
-<h3>Private Bank Jobs</h3>
-<p>
-Private banking, sales, customer service और banking support jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🛵</div><h3>Bike Delivery</h3></div>
 
-<!-- 25 -->
-<div class="card">
-<div class="icon">🏠</div>
-<h3>Real Estate Jobs</h3>
-<p>
-Property sales, field executive और real estate related jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">📦</div><h3>Picker & Packer</h3></div>
 
-<!-- 26 -->
-<div class="card">
-<div class="icon">🧹</div>
-<h3>Housekeeping Jobs</h3>
-<p>
-Office, hotel, building और facility housekeeping jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🏗️</div><h3>Construction Worker</h3></div>
 
-<!-- 27 -->
-<div class="card">
-<div class="icon">💇</div>
-<h3>Beauty & Salon Jobs</h3>
-<p>
-Salon, barber, beautician और beauty industry jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🔧</div><h3>Electrician</h3></div>
 
-<!-- 28 -->
-<div class="card">
-<div class="icon">📱</div>
-<h3>Telecaller Jobs</h3>
-<p>
-Telecalling, customer calling, telesales और phone support jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🚰</div><h3>Plumber</h3></div>
 
-<!-- 29 -->
-<div class="card">
-<div class="icon">🎨</div>
-<h3>Graphic Designer Jobs</h3>
-<p>
-Graphic design, creative design और digital designing opportunities.
-</p>
-</div>
+        <div class="job-card"><div class="icon">❄️</div><h3>AC Technician</h3></div>
 
-<!-- 30 -->
-<div class="card">
-<div class="icon">📣</div>
-<h3>Digital Marketing Jobs</h3>
-<p>
-Digital marketing, social media, SEO और online marketing jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🔩</div><h3>Machine Operator</h3></div>
 
-<!-- 31 -->
-<div class="card">
-<div class="icon">✍️</div>
-<h3>Content Writing Jobs</h3>
-<p>
-Content writing, copywriting, blogging और online writing jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">⚙️</div><h3>Maintenance Staff</h3></div>
 
-<!-- 32 -->
-<div class="card">
-<div class="icon">🛍️</div>
-<h3>E-Commerce Jobs</h3>
-<p>
-Online store, e-commerce support, order processing और related jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🧪</div><h3>Quality Checker</h3></div>
 
-<!-- 33 -->
-<div class="card">
-<div class="icon">🏠</div>
-<h3>Work From Home Jobs</h3>
-<p>
-Eligible candidates के लिए घर से किए जाने वाले private work opportunities.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🏭</div><h3>Production Executive</h3></div>
 
-<!-- 34 -->
-<div class="card">
-<div class="icon">👔</div>
-<h3>Management & Executive Jobs</h3>
-<p>
-Team leader, supervisor, manager और executive level jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">📦</div><h3>Dispatch Executive</h3></div>
 
-<!-- 35 -->
-<div class="card">
-<div class="icon">🔬</div>
-<h3>Quality Control Jobs</h3>
-<p>
-Quality checking, inspection और production quality से जुड़ी jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🚛</div><h3>Logistics Executive</h3></div>
 
-<!-- 36 -->
-<div class="card">
-<div class="icon">🚘</div>
-<h3>Automobile Jobs</h3>
-<p>
-Car, bike, automobile service, mechanic और workshop jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">📍</div><h3>Field Worker</h3></div>
 
-<!-- 37 -->
-<div class="card">
-<div class="icon">⚙️</div>
-<h3>Mechanical Jobs</h3>
-<p>
-Mechanical maintenance, machine work और engineering support jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">☎️</div><h3>Customer Care</h3></div>
 
-<!-- 38 -->
-<div class="card">
-<div class="icon">🏗️</div>
-<h3>Civil Jobs</h3>
-<p>
-Civil site, construction supervision और civil work opportunities.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🖥️</div><h3>IT Support</h3></div>
 
-<!-- 39 -->
-<div class="card">
-<div class="icon">📋</div>
-<h3>Receptionist & Front Desk Jobs</h3>
-<p>
-Reception, front office, visitor handling और customer desk jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">📈</div><h3>Marketing Executive</h3></div>
 
-<!-- 40 -->
-<div class="card">
-<div class="icon">🧾</div>
-<h3>Billing & Cashier Jobs</h3>
-<p>
-Billing counter, cashier, invoice और payment handling jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🤝</div><h3>Relationship Manager</h3></div>
 
-<!-- 41 -->
-<div class="card">
-<div class="icon">🚛</div>
-<h3>Transport & Fleet Jobs</h3>
-<p>
-Transport company, fleet assistant और logistics coordination jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🧑‍🏫</div><h3>Teacher</h3></div>
 
-<!-- 42 -->
-<div class="card">
-<div class="icon">🏬</div>
-<h3>Mall & Showroom Jobs</h3>
-<p>
-Showroom, mall, sales staff, customer support और store jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🏥</div><h3>Hospital Staff</h3></div>
 
-<!-- 43 -->
-<div class="card">
-<div class="icon">✈️</div>
-<h3>Travel & Tourism Jobs</h3>
-<p>
-Travel agency, ticketing, tour support और tourism related jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">🧑‍⚕️</div><h3>Healthcare Jobs</h3></div>
 
-<!-- 44 -->
-<div class="card">
-<div class="icon">📦</div>
-<h3>Packing & Packaging Jobs</h3>
-<p>
-Product packing, packaging line और dispatch से जुड़ी jobs.
-</p>
-</div>
+        <div class="job-card"><div class="icon">💼</div><h3>Other Private Jobs</h3></div>
 
-<!-- 45 -->
-<div class="card">
-<div class="icon">🧑‍🔧</div>
-<h3>Skilled & Unskilled Jobs</h3>
-<p>
-Skilled workers, semi-skilled और entry-level candidates के लिए jobs.
-</p>
-</div>
+    </div>
 
-<!-- 46 -->
-<div class="card">
-<div class="icon">⭐</div>
-<h3>Other Private Jobs</h3>
-<p>
-अन्य private companies और industries में उपलब्ध job opportunities.
-</p>
-</div>
-
-</div>
 </section>
 
 
 <!-- BENEFITS -->
-<section class="section" id="benefits">
+<section class="benefits" id="benefits">
 
-<div class="section-title">
+    <h2 class="section-title">Why Choose Job Supply?</h2>
 
-<h2>Job Benefits</h2>
+    <div class="benefit-grid">
 
-<p>
-Available jobs में मिलने वाली सुविधाएं
-</p>
+        <div class="benefit">
+            <div class="icon">✅</div>
+            <h3>Private Job Opportunities</h3>
+            <p>अलग-अलग क्षेत्रों में नौकरी के अवसर।</p>
+        </div>
 
-</div>
+        <div class="benefit">
+            <div class="icon">📱</div>
+            <h3>Easy Contact</h3>
+            <p>WhatsApp और Call के माध्यम से आसानी से संपर्क करें।</p>
+        </div>
 
-<div class="benefits">
+        <div class="benefit">
+            <div class="icon">📄</div>
+            <h3>Easy Resume Upload</h3>
+            <p>अपना Resume सीधे Google Drive पर भेजें।</p>
+        </div>
 
-<div class="benefit">💰 अच्छी Salary</div>
-<div class="benefit">📅 Timely Salary</div>
-<div class="benefit">🏠 Room / Accommodation</div>
-<div class="benefit">🍛 Food Facility</div>
-<div class="benefit">🚌 Transportation</div>
-<div class="benefit">🛡️ PF + ESIC</div>
-<div class="benefit">☀️ Day Shift</div>
-<div class="benefit">🌙 Night Shift</div>
-<div class="benefit">⏰ Overtime</div>
-<div class="benefit">📈 Career Opportunity</div>
+        <div class="benefit">
+            <div class="icon">🤝</div>
+            <h3>Candidate Support</h3>
+            <p>Job search में बेहतर guidance और support।</p>
+        </div>
 
-</div>
+    </div>
+
 </section>
 
 
 <!-- HOW IT WORKS -->
-<section class="section">
+<section id="how">
 
-<div class="section-title">
+    <h2 class="section-title">How It Works</h2>
 
-<h2>
-कैसे काम करता है?
-</h2>
+    <div class="steps">
 
-<p>
-Job पाने के लिए आसान process
-</p>
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>Resume तैयार करें</h3>
+            <p>अपना updated Resume PDF, DOC या DOCX में रखें।</p>
+        </div>
 
-</div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>Resume Upload करें</h3>
+            <p>नीचे दिए गए form से अपना Resume upload करें।</p>
+        </div>
 
-<div class="steps">
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>Job के लिए संपर्क</h3>
+            <p>जरूरत के अनुसार WhatsApp या Call करें।</p>
+        </div>
 
-<div class="step">
-<div class="step-number">1</div>
-<h3>Job चुनें</h3>
-<p>
-अपनी पसंद की private job category देखें।
-</p>
-</div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <h3>Job Opportunity</h3>
+            <p>Suitable job opportunity मिलने पर आगे की जानकारी दी जाएगी।</p>
+        </div>
 
-<div class="step">
-<div class="step-number">2</div>
-<h3>Resume Upload करें</h3>
-<p>
-अपना resume upload करें। Resume Google Drive में भेजा जाएगा।
-</p>
-</div>
+    </div>
 
-<div class="step">
-<div class="step-number">3</div>
-<h3>Contact करें</h3>
-<p>
-Job की जानकारी के लिए WhatsApp या phone पर contact करें।
-</p>
-</div>
-
-</div>
 </section>
 
 
 <!-- RESUME UPLOAD -->
-<section class="section" id="resume">
+<section class="upload-section" id="upload">
 
-<div class="section-title">
+    <h2 class="section-title">Upload Your Resume</h2>
 
-<h2>
-📄 Resume Upload
-</h2>
+    <div class="upload-box">
 
-<p>
-अपना resume upload करें और private job opportunity के लिए contact करें।
-</p>
+        <h3>📄 अपना Resume भेजें</h3>
 
-</div>
+        <form id="resumeForm">
 
-<div class="resume-box">
+            <div class="form-group">
+                <label for="candidateName">Candidate Name</label>
+                <input
+                    type="text"
+                    id="candidateName"
+                    placeholder="अपना पूरा नाम लिखें"
+                    required>
+            </div>
 
-<h3>
-अपना Resume भेजें
-</h3>
+            <div class="form-group">
+                <label for="candidatePhone">Mobile Number</label>
+                <input
+                    type="tel"
+                    id="candidatePhone"
+                    placeholder="10 digit mobile number"
+                    maxlength="10"
+                    required>
+            </div>
 
-<p>
-PDF, DOC या DOCX file upload कर सकते हैं।
-Maximum file size 10 MB है।
-</p>
+            <div class="form-group">
+                <label for="resumeFile">Upload Resume</label>
+                <input
+                    type="file"
+                    id="resumeFile"
+                    accept=".pdf,.doc,.docx"
+                    required>
+            </div>
 
-<form id="resumeForm" class="upload-form">
+            <p style="font-size:13px;color:#666;margin-bottom:15px;">
+                PDF / DOC / DOCX only • Maximum 10 MB
+            </p>
 
-<input
-type="text"
-id="candidateName"
-placeholder="अपना नाम लिखें"
-required
->
+            <button
+                type="submit"
+                class="upload-btn"
+                id="uploadButton">
+                📤 Upload Resume
+            </button>
 
-<input
-type="tel"
-id="candidatePhone"
-placeholder="Mobile Number"
-required
->
+            <div id="uploadMessage"></div>
 
-<label
-for="resumeFile"
-class="file-label"
->
+        </form>
 
-📎 Resume File चुनें
+    </div>
 
-<br>
-
-<small id="fileName">
-PDF / DOC / DOCX
-</small>
-
-</label>
-
-<input
-type="file"
-id="resumeFile"
-class="upload-input"
-accept=".pdf,.doc,.docx"
-required
->
-
-<button
-type="submit"
-class="upload-btn"
-id="uploadButton"
->
-📤 Upload Resume
-</button>
-
-<div id="uploadMessage"></div>
-
-</form>
-
-</div>
 </section>
 
 
 <!-- CONTACT -->
-<section class="section" id="contact">
+<section class="contact" id="contact">
 
-<div class="contact">
+    <h2 class="section-title">Contact Deepak Gupta</h2>
 
-<h2>
-📞 Contact Job Supply
-</h2>
+    <div class="contact-box">
 
-<p>
-Private Job के बारे में जानकारी के लिए हमसे संपर्क करें।
-</p>
+        <p>👤 <strong>Name:</strong> Deepak Gupta</p>
 
-<p>
-📱 Phone:
-<a href="tel:+919693428916">
-9693428916
-</a>
-</p>
+        <p>
+            📞 <strong>Mobile:</strong>
+            <a href="tel:9693428916">9693428916</a>
+        </p>
 
-<p>
-💬 WhatsApp:
-<a
-href="https://wa.me/919693428916"
-target="_blank"
->
-WhatsApp पर बात करें
-</a>
-</p>
+        <p>
+            💬 <strong>WhatsApp:</strong>
+            <a href="https://wa.me/919693428916" target="_blank">
+                Chat on WhatsApp
+            </a>
+        </p>
 
-<p>
-📧 Email:
-<a href="mailto:deepakgupta818286@gmail.com">
-deepakgupta818286@gmail.com
-</a>
-</p>
+        <p>
+            ✉️ <strong>Email:</strong>
+            <a href="mailto:deepakgupta818286@gmail.com">
+                deepakgupta818286@gmail.com
+            </a>
+        </p>
 
-</div>
+    </div>
+
 </section>
 
 
-<!-- FOOTER -->
 <footer>
 
-© <span id="year"></span>
-Job Supply • Private Job Assistance • Deepak Gupta
+    <p><strong>Job Supply | Deepak Gupta</strong></p>
+
+    <p>Private Job Opportunities & Resume Collection</p>
+
+    <p>© 2026 Job Supply. All Rights Reserved.</p>
 
 </footer>
 
 
 <script>
 
-/* YEAR */
-
-document.getElementById("year").textContent =
-new Date().getFullYear();
-
-
-/* GOOGLE APPS SCRIPT */
+/* ================================
+   GOOGLE APPS SCRIPT URL
+   ================================ */
 
 const GOOGLE_SCRIPT_URL =
-"https://script.google.com/macros/s/AKfycbyXpZZwOSK1Gy9p6j-VJeUmbFfCT8jxBL14G2_pku1vUWbapB6JjSzdMXJbC7iO5M2-kA/exec";
+"https://script.google.com/macros/s/AKfycbyXpZZwOSK1Gy9p6j-VeUmbFfCT8jxBL14G2_pku1vUWbapB6JjSzdMXJbC7iO5M2-kA/exec";
 
 
-/* FILE NAME */
+/* ================================
+   RESUME UPLOAD
+   ================================ */
 
-document
-.getElementById("resumeFile")
-.addEventListener("change",function(){
+document.getElementById("resumeForm").addEventListener("submit", async function(e){
 
-const file=this.files[0];
+    e.preventDefault();
 
-if(file){
+    const name =
+        document.getElementById("candidateName").value.trim();
 
-document.getElementById("fileName").textContent =
-"Selected: " + file.name;
+    const phone =
+        document.getElementById("candidatePhone").value.trim();
 
-}else{
+    const fileInput =
+        document.getElementById("resumeFile");
 
-document.getElementById("fileName").textContent =
-"PDF / DOC / DOCX";
+    const file =
+        fileInput.files[0];
 
-}
+    const button =
+        document.getElementById("uploadButton");
+
+    const message =
+        document.getElementById("uploadMessage");
+
+
+    /* NAME CHECK */
+
+    if(name.length < 2){
+
+        message.style.color = "red";
+        message.textContent =
+            "कृपया अपना सही नाम लिखें।";
+
+        return;
+    }
+
+
+    /* PHONE CHECK */
+
+    if(!/^[6-9]\d{9}$/.test(phone)){
+
+        message.style.color = "red";
+        message.textContent =
+            "कृपया सही 10 digit mobile number डालें।";
+
+        return;
+    }
+
+
+    /* FILE CHECK */
+
+    if(!file){
+
+        message.style.color = "red";
+        message.textContent =
+            "कृपया Resume select करें।";
+
+        return;
+    }
+
+
+    /* FILE SIZE */
+
+    if(file.size > 10 * 1024 * 1024){
+
+        message.style.color = "red";
+        message.textContent =
+            "Resume का size 10 MB से ज्यादा नहीं होना चाहिए।";
+
+        return;
+    }
+
+
+    /* FILE TYPE */
+
+    const allowedTypes = [
+        "application/pdf",
+        "application/msword",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    ];
+
+    const allowedExtensions = [
+        ".pdf",
+        ".doc",
+        ".docx"
+    ];
+
+    const fileNameLower =
+        file.name.toLowerCase();
+
+    const validExtension =
+        allowedExtensions.some(ext =>
+            fileNameLower.endsWith(ext)
+        );
+
+    if(!allowedTypes.includes(file.type) && !validExtension){
+
+        message.style.color = "red";
+        message.textContent =
+            "सिर्फ PDF, DOC या DOCX Resume upload करें।";
+
+        return;
+    }
+
+
+    /* BUTTON */
+
+    button.disabled = true;
+    button.textContent = "⏳ Uploading...";
+
+    message.style.color = "#1976d2";
+    message.textContent =
+        "Resume upload हो रहा है, कृपया wait करें...";
+
+
+    /* READ FILE */
+
+    const reader =
+        new FileReader();
+
+
+    reader.onload = async function(){
+
+        try{
+
+            const base64Data =
+                reader.result.split(",")[1];
+
+
+            const payload = {
+
+                name: name,
+
+                phone: phone,
+
+                fileName: file.name,
+
+                mimeType:
+                    file.type ||
+                    "application/octet-stream",
+
+                fileData: base64Data
+
+            };
+
+
+            const response =
+                await fetch(
+                    GOOGLE_SCRIPT_URL,
+                    {
+                        method:"POST",
+
+                        headers:{
+                            "Content-Type":
+                            "text/plain;charset=utf-8"
+                        },
+
+                        body:
+                            JSON.stringify(payload)
+                    }
+                );
+
+
+            const result =
+                await response.json();
+
+
+            if(result.success){
+
+                message.style.color = "green";
+
+                message.innerHTML =
+                    "✅ Resume successfully upload हो गया।<br>" +
+                    "धन्यवाद " + name + "!";
+
+
+                document
+                    .getElementById("resumeForm")
+                    .reset();
+
+            }else{
+
+                throw new Error(
+                    result.message ||
+                    "Upload failed"
+                );
+
+            }
+
+        }catch(error){
+
+            console.error(error);
+
+            message.style.color = "red";
+
+            message.textContent =
+                "❌ Resume upload नहीं हो पाया। कृपया फिर से कोशिश करें।";
+
+        }
+
+
+        button.disabled = false;
+
+        button.textContent =
+            "📤 Upload Resume";
+
+    };
+
+
+    reader.onerror = function(){
+
+        message.style.color = "red";
+
+        message.textContent =
+            "❌ File read नहीं हो पाई।";
+
+        button.disabled = false;
+
+        button.textContent =
+            "📤 Upload Resume";
+
+    };
+
+
+    reader.readAsDataURL(file);
 
 });
 
+</script>
 
-/* RESUME UPLOAD */
-
-document
-.getElementById("resumeForm")
-.addEventListener("submit",async function(event){
-
-event.preventDefault();
-
-const name =
-document.getElementById("candidateName").value.trim();
-
-const phone =
-document.getElementById("candidatePhone").value.trim();
-
-const file =
-document.getElementById("resumeFile").files[0];
-
-const message =
-document.getElementById("uploadMessage");
-
-const button =
-document.getElementById("uploadButton");
-
-
-if(!name){
-
-message.textContent =
-"❌ कृपया अपना नाम डालें।";
-
-message.style.color="red";
-
-return;
-
-}
-
-
-if(!phone){
-
-message.textContent =
-"❌ कृपया mobile number डालें।";
-
-message.style.color="red";
-
-return;
-
-}
-
-
-if(!file){
-
-message.textContent =
-"❌ कृपया resume file चुनें।";
-
-message.style.color="red";
-
-return;
-
-}
-
-
-/* MAXIMUM 10 MB */
-
-const maxSize =
-10 * 1024 * 1024;
-
-if(file.size > maxSize){
-
-message.textContent =
-"❌ File size 10 MB से ज्यादा नहीं होनी चाहिए।";
-
-message.style.color="red";
-
-return;
-
-}
-
-
-/* FILE TYPE */
-
-const extension =
-file.name.split(".").pop().toLowerCase();
-
-const allowedExtensions =
-["pdf","doc","docx"];
-
-if(!allowedExtensions.includes(extension)){
-
-message.textContent =
-"❌ केवल PDF, DOC या DOCX file upload करें।";
-
-message.style.color="red";
-
-return;
-
-}
-
-
-button.disabled=true;
-
-button.textContent =
-"⏳ Uploading...";
-
-message.textContent =
-"⏳ आपका resume upload हो रहा है...";
-
-message.style.color =
-"#2563eb";
-
-
-const reader =
-new FileReader();
-
-
-reader.onload =
-async function(){
-
-try{
-
-const base64Data =
-reade
+</body>
+</html>
